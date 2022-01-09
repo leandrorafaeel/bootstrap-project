@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projeto em Bootstrap 5, veja como é fácil trabalhar com essa Framework">
+        <meta name="keywords" content="bootstrap, frontend, uiux, web">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Leandro Rafael">
+
+        <!-- FAVICONS -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- BOOTSTRAP LINK -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- BOOTSTRAP ICONS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <!-- OWL CAROUSEL -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!-- MAIN CSS-->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header id="cabecalho">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- LOGO -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.svg" class="img-fluid" alt="Logo image">
+                    </a>
+
+                    <!-- BUTTON MOBILE -->
+                    <button
+                        class="navbar-toggler"
+                        type="button" 
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu-principal" 
+                        aria-controls="menu-principal" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- MENU PRINCIPAL -->
+                    <div class="collapse navbar-collapse justify-content-end" id="menu-principal">
+                        <ul class="navbar-nav my-4 my-lg-0">
+                            <li class="nav-item me-0 me-md-4">
+                                <a class="navbar nav-link active" aria-current="page" href="#cabecalho">Página Inicial</a>
+                            </li>   
+                            <li class="nav-item me-0 me-md-4">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item e-0 me-md-4">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item me-0 me-md-4">
+                                <a class="nav-link" href="#portifolio">Portifólio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--BUTTON UP-->
+            <a href="#" id="btn-subir"><i class="bi bi-chevron-up"></i></a>
+
+            <!-- HEADER BANNER -->
+            <section class="banner py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 pe-md-5">
+                            <h1>LOREM IPSUM DOLOR AONDEAI</h1>
+                            <h2>Et Sumi Kapa namur aondeai rocus pocus magna aliqua labore</h2>
+                            <a href="#sobre" class="btn button banner-btn me-md-2 me-0">Saiba Mais</a>
+                            <a href="#contato" class="btn button banner-btn btn-contato">Contato</a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <figure>
+                                <img src="assets/img/header.svg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <!-- PRINCIPAL -->
+        <main id="principal">
+            <!-- SOBRE -->
+            <section class="sobre" id="sobre">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 pe-md-5 order-md-1 order-2">
+                            <figure>
+                                <img src="assets/img/sobre.svg" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="col-md-6 order-md-2 order-1">
+                            <h3 class="text-uppercase mb-4">At vero eos et accusamus et iusto veniam</h3>
+                            <p class="lead mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veniam deserunt
+                                eius sapiente dolores maxime voluptate tenetur? Veniam amet esse debitis 
+                                similique nam hic eligendi dolores enim. Earum, voluptates quaerat.
+                            </p>
+                            <p class="lead mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veniam deserunt
+                                eius sapiente dolores.
+                            </p>
+                            <a href="#" class="btn button">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICOS -->
+            <section class="servicos" id="servicos">
+                <div class="container py-5">
+                    <div class="row">
+                        <!-- SERVICOS -->
+                        <header class="col-md-12">
+                            <h2 class="titulo">Nossos Serviços</h2>
+                        </header>
+
+                        <!-- ITEM -->
+                        <article class="col-md-3">
+                            <div class="servicos-card mb-4 md-mb-0">
+                                <figure class="my-4">
+                                    <img src="assets/img/servicos/destaque1.svg" class="img-fluid" alt="SEO-SVG">
+                                </figure>
+                                <h4>SEO</h4>
+                                <p class="lead text-center">
+                                    Lorem ipsum dolor sit amet elit
+                                </p>
+                            </div>                      
+                        </article>
+
+                        <!-- ITEM -->
+                        <article class="col-md-3">
+                            <div class="servicos-card mb-4 md-mb-0">
+                                <figure class="my-4">
+                                    <img src="assets/img/servicos/destaque2.svg" class="img-fluid" alt="SEO-SVG">
+                                </figure>
+                                <h4>kapa Namur</h4>
+                                <p class="lead text-center">
+                                    Lorem ipsum dolor sit amet elit
+                                </p>
+                            </div>  
+                        </article>
+
+                        <!-- ITEM -->
+                        <article class="col-md-3">
+                            <div class="servicos-card mb-4 md-mb-0">
+                                <figure class="my-4">
+                                    <img src="assets/img/servicos/destaque3.svg" class="img-fluid" alt="SEO-SVG">
+                                </figure>
+                                <h4>Dolores Enim</h4>
+                                <p class="lead text-center">
+                                    Lorem ipsum dolor sit amet elit
+                                </p>
+                            </div>  
+                        </article>
+
+                        <!-- ITEM -->
+                        <article class="col-md-3">
+                            <div class="servicos-card mb-4 md-mb-0">
+                                <figure class="my-4">
+                                    <img src="assets/img/servicos/destaque4.svg" class="img-fluid" alt="SEO-SVG">
+                                </figure>
+                                <h4>Veniam Amet</h4>
+                                <p class="lead text-center">
+                                    Lorem ipsum dolor sit amet elit
+                                </p>
+                            </div>  
+                        </article>
+                    </div>
+
+                    <!-- CLIENTES & EXPERIÊNCIA-->
+                    <section class="clientes-experiencia py-5">
+                        <div class="row align-items-center justify-content-center">
+                            <!-- CLIENTES -->
+                            <article class="col-md-6 clientes">
+                                <ul class="list d-flex">
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo1.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo2.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo3.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo4.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo5.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo6.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo7.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="me-3 my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo8.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                    <!-- ITEM -->
+                                    <li class="my-3">
+                                        <figure>
+                                            <img src="assets/img/clientes/logo9.svg" class="img-fluid" alt="">
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </article>
+
+                            <!-- EXPERIENCIA -->
+                            <article class="experiencia col-md-6">  
+                                <figure>
+                                    <img src="assets/img/computer.svg" class="img-fluid computador" alt="">
+                                </figure>   
+                                <p class="lead anos">
+                                    <span>10</span> anos de experiência
+                                </p>
+
+                                <div class="contato py-5">
+                                    <figure>
+                                        <img src="assets/img/phone.svg" class="img-fluid" alt="">
+                                    </figure>                                
+
+                                    <div class="atendimento">
+                                        <p class="lead numero">(85) 9996-6699</p>
+                                        <p class="lead horario">
+                                            Atendimento de Seg à Sex, das 8h às 18h
+                                        </p>
+                                    </div>   
+                                </div>                   
+                            </article>
+                        </div>                        
+                    </section>
+                </div>
+            </section>
+
+            <!-- DADOS DA EMPRESA-->
+            <section id="dados">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-3 col-6 circle-box">
+                            <div id="circleA"></div>
+                            <p class="my-3 lead">Projetos Entregue</p>
+                        </div>
+                        <div class="col-md-3 col-6 circle-box">
+                            <div id="circleB"></div>
+                            <p class="my-3 lead">Clientes Satisfeitos</p>
+                        </div>
+                        <div class="col-md-3 col-6 circle-box">
+                            <div id="circleC"></div>
+                            <p class="my-3 lead">Colaboradores</p>
+                        </div>
+                        <div class="col-md-3 col-6 circle-box">
+                            <div id="circleD"></div>
+                            <p class="my-3 lead">Cafézinhos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJETOS -->
+            <section class="projetos" id="projetos">
+                <div class="container py-5">
+                    <header>
+                        <h2 class="titulo">Nossos Projetos</h2>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-12 botoes text-center">
+                            <button class="btn button active me-md-4" id="btn-all" data-filter="*">Todos</button>
+                            <button class="btn button me-md-4" id="btn-web" data-filter=".sites">Sites</button>
+                            <button class="btn button me-md-4" id="btn-mobile" data-filter=".mobile">Mobile</button>
+                            <button class="btn button" id="btn-design" data-filter=".design">Design</button>
+                        </div>
+                    </div>
+
+                   <div class="row g-4 items">
+                        <div class="item sites col-md-4">
+                            <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item mobile col-md-4">
+                            <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item design col-md-4">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item mobile col-md-4">
+                            <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item design col-md-4">
+                            <img src="https://images.pexels.com/photos/4463588/pexels-photo-4463588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item sites col-md-4">
+                             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item design col-md-4">
+                            <img src="https://images.pexels.com/photos/3361483/pexels-photo-3361483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item sites col-md-4">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="item mobile col-md-4">
+                            <img src="https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+                        </div>
+                   </div>
+                </div>
+            </section>
+
+            <!-- DEPOIMENTOS -->
+            <section class="depoimentos" id="depoimentos">
+                <div class="container py-5">
+                    <header>
+                        <h2 class="titulo">Depoimentos</h2>
+                    </header>
+                    
+                    <div class="owl-carousel owl-theme">
+                        <!-- ITEM -->
+                        <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Roberto Silva</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Consultor técnico</h3>
+                            </footer>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Maria de Fatima</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Gerente de Contas</h3>
+                            </footer>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Karen Monteiro</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Desenvolvedora Mobile</h3>
+                            </footer>
+                        </div>
+
+                        <!-- ITEM -->
+                         <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Júlio Barbosa</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Programador Web</h3>
+                            </footer>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Paulo Costa</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Diretor de Marketing</h3>
+                            </footer>
+                        </div>
+
+                        <!-- ITEM -->
+                        <div class="item">
+                            <header>
+                                <figure>
+                                    <img src="assets/img/user.svg" class="img-fluid" alt="">
+                                </figure>
+                                <h3>Karla Vitória</h3>
+                            </header>
+                            <section class="comentario">
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim
+                                    tempora architecto possimus tenetur quasi quos, ipsum facere, officia sed.
+                                </p>
+                                <img src="assets/img/quote.svg" class="img-fluid" alt="">
+                            </section>
+                            <footer>
+                                <h3>Gerente de Projetos</h3>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEWSLETTER -->
+            <section class="newsletter" id="contato">
+                <div class="container py-5">
+                    <article class="formulario">
+                        <figure>
+                            <img src="assets/img/paperplane.svg" class="img-fluid" alt="">
+                        </figure>
+
+                        <h3 class="text-center mb-5">Fique atento as nossas novidades</h3>
+                        
+                        <form action="">
+                            <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail">
+                            <button type="submit" class="btn button">Enviar</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+        
+        <!-- FOOTER -->
+        <footer id="rodape" class="rodape">
+            <div class="container py-3">
+                <div class="row rodape-content align-items-center justify-content-between">
+                    <div class="col-md-8 col-12">
+                        <a href="#cabecalho">
+                            <figure>
+                                <img src="assets/img/logo.svg" alt="" class="img-fluid">
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <p class="lead text-center">
+                            &copy;2021 - Desenvolvido por <a href="https://www.instagram.com/leandro.rafaeel/" target="_blank">Leandro Rafael</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+        <!-- POPPER -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <!-- BOOTSTRAP JS-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- PROGRESSBAR JS-->
+        <script src="assets/js/progressbar.min.js"></script>
+        <!-- OWL CAROUSEL JS-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- ISOTOPE JS-->
+        <script src="assets/js/isotope.min.js"></script>
+        <!-- MAIN JS-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

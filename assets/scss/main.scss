@@ -1,0 +1,583 @@
+@use 'variables';
+@use 'mixins';
+
+//padrão dos botões
+.button{
+    padding: 10px 30px;
+    background-color: variables.$primary-color;
+    color: variables.$light-color;
+    border-radius: 70px;
+    &:hover{
+        background-color: variables.$secondary-color;
+   
+        color: variables.$light-color;
+    }
+}
+
+#btn-subir{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: variables.$primary-color;
+    border-radius: 3px;
+    z-index: 9999999999999999;
+    box-shadow: 0 0 30px rgba(0,0,0, .2);
+    i{
+        color: #fff;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+}
+
+//padrão dos titulos das sessões
+.titulo{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+
+    &::before{
+        content: " ";
+        width: 100px;
+        height: 5px;
+        display: block;
+        background-color: variables.$primary-color;
+        border-radius: 70px;
+        margin-bottom: 8px;
+    }
+}
+
+//header
+#cabecalho{    
+    .navbar-nav{
+        .nav-link{
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+            &:hover{
+                color: variables.$primary-color;
+            }
+        }
+
+    }
+
+    //banner-header
+    .banner{
+        background-color: variables.$light-color;
+        @include mixins.mobile(){
+            padding: 60px;
+        }
+
+        h1{
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+         
+            @include mixins.mobile(){
+                font-size: 2.2rem;
+                text-align: center;
+            }
+        }
+
+        h2{
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 40px 0;
+            @include mixins.mobile(){
+                font-size: 1.3rem;
+                text-align: center;
+                margin: 20px 0;
+                font-weight: 300;
+            }
+        }
+
+        &-btn{
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            font-weight: 600;
+            
+            &:hover{
+                background-color: variables.$primary-color-dark;
+            } 
+
+            @include mixins.mobile(){
+                padding: 10px;
+                font-size: .9rem;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        .btn-contato{
+            background-color: transparent;
+            border: 1px solid variables.$primary-color;
+            color: variables.$primary-color;
+        
+            &:hover{
+                background-color: variables.$primary-color;
+                color: variables.$light-color;
+            }
+
+            @include mixins.mobile(){
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+//sobre
+#sobre{
+    @include mixins.mobile(){
+        padding: 20px 60px;
+    }
+
+    h3{
+        font-size: 2rem;
+        font-weight: 600;
+        @include mixins.mobile(){
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 900;
+        }
+    }
+
+    .button{
+        @include mixins.mobile(){
+            width: 100%;
+            margin-bottom: 60px;
+            padding: 10px;
+            font-size: .9rem;
+        }
+    }
+}
+
+//servicos
+#servicos{
+    background-color: variables.$light-color;
+
+    @include mixins.mobile(){
+        padding: 20px 60px;
+    }
+
+    h2{
+        @include mixins.mobile(){
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+        }
+    }
+
+   .servicos-card{
+        background-color: #fff;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 5px 10px 10px variables.$medium-color;
+        height: 340px;
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 5px 10px 10px variables.$dark-color;
+        }
+
+        @include mixins.mobile(){
+            padding: 10px;
+            height: 280px;
+        }
+
+        img{
+            @include mixins.mobile(){
+                width: 100px;
+                margin-bottom: 20px;
+            }
+        }
+   }
+}
+
+//clientes & experiencia
+.clientes-experiencia{
+    //clientes
+    .clientes{
+        .list{
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+            margin: 0;
+
+            @include mixins.mobile(){
+                justify-content: center;
+            }
+
+            li{
+                background-color: #fff;
+                padding: 15px;
+                width: 25%;
+                min-height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                img{
+                    filter: grayscale(100%);
+                }
+
+                &:hover img{
+                    filter: grayscale(0%);
+                }  
+            }
+        }
+    }
+
+    //experiencia
+    .experiencia{
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include mixins.mobile(){
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .computador{
+            position: absolute;
+            left: -90px;
+            width: 280px;
+
+            @include mixins.mobile(){
+                width: 150px;
+                left: -50px;
+                top: 40px;
+            }
+        }
+
+        .anos{
+            font-size: 2.2rem;
+            align-self: flex-end;
+            color: variables.$secondary-color;
+
+            @include mixins.mobile(){
+                font-size: 1.3rem;
+            }
+
+            span{
+                font-size: 7rem;
+                display: block;
+                font-weight: 900;
+
+                @include mixins.mobile(){
+                    font-size: 5rem;
+                }
+            }  
+        }
+
+        .contato{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 70px;
+
+                @include mixins.mobile(){
+                    width: 40px;
+                }
+            } 
+
+            .numero{
+                color: variables.$dark-color;
+                font-weight: 900;
+                font-size: 2.2rem;
+
+                @include mixins.mobile(){
+                    font-size: 1.3rem;
+                }
+            }
+
+            .horario{
+                color: variables.$secondary-color;
+                font-size: 1.2rem;
+                font-weight: 500;
+
+                @include mixins.mobile(){
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+//dados - progressbar
+#dados{
+    background-image: url('../img/empresa-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .circle-box{
+        div{
+            padding: 0 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            @include mixins.mobile(){
+                padding: 0;
+                width: 70%;
+                margin: 20px auto;
+            }
+        }
+
+        p{
+            color: #fff;
+            text-align: center;
+            font-size:  1.6rem;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-weight: 900;
+
+            @include mixins.mobile(){
+                font-size: 1.2rem;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .progressbar-text{
+            font-size: 2.2rem;
+            font-weight: 900;
+        }
+    } 
+}
+
+//projetos 
+#projetos{
+    background-color: #fff;
+
+    @include mixins.mobile(){
+        padding: 20px 60px;
+    } 
+
+    h2{
+        @include mixins.mobile(){
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .botoes{
+        margin-bottom: 60px;
+       
+        .button{
+            background-color: transparent;
+            border: 2px solid variables.$secondary-color;
+            color: variables.$secondary-color;
+            border-radius: 70px;
+            padding: 10px 45px;
+            font-weight: 600;
+            outline: none;
+
+            &:hover{
+                background-color: variables.$secondary-color;
+                color: #fff;
+                border-color: variables.$secondary-color;
+            }
+
+            @include mixins.mobile(){
+                padding: 6px 15px;
+            }  
+        }
+    }
+    .item{
+        img{
+            width: 100%;
+        }
+    }
+    .button.active{
+        background-color: variables.$secondary-color;
+        border-color: variables.$secondary-color;
+        color: variables.$light-color;
+    }
+}
+
+//depoimentos
+#depoimentos{
+    background-color: variables.$light-color;
+    @include mixins.mobile(){
+        padding: 20px 60px;
+    } 
+
+    h2{
+        @include mixins.mobile(){
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .item{
+        width: 100%;
+        border-radius: 4px;
+        padding: 15px 30px;
+        background-color: #fff;
+        margin-bottom: 25px;
+
+        header{
+            display: flex;
+            align-items: center;
+
+            h3{
+                color: variables.$secondary-color;
+            }
+    
+            img{
+                width: 50px;
+                margin-right: 30px;
+            }
+        }
+
+        .comentario{
+            display: flex;
+            flex-direction: column;
+
+            @include mixins.mobile(){
+                padding: 10px;
+            } 
+
+            img{
+                width: 45px;
+                align-self: flex-end;
+            }
+        }
+
+        footer {
+            h3{
+                font-size: 1.4rem;
+                color: variables.$secondary-color;
+            }
+        }
+    }
+}
+
+//newsletter
+#contato{
+    background-color: #fff;
+    padding: 40px;
+
+    .formulario{
+        background-color: variables.$secondary-color;
+        border-radius: 5px;
+        padding: 100px;
+        position: relative;
+
+        @include mixins.mobile(){
+            padding: 100px 50px;
+        } 
+
+        img{
+            position: absolute;
+            top: -40px;
+            width: 130px;
+
+            @include mixins.mobile(){
+                width: 90px;
+            } 
+        }
+        h3{
+            color: variables.$light-color;
+            font-size: 2.5rem;
+
+            @include mixins.mobile(){
+                font-size: 1.8rem;
+            } 
+        }
+        form{
+            display: flex;
+            justify-content: center;
+
+            @include mixins.mobile(){
+                display: flex;
+                flex-direction: column;
+            } 
+
+            input{
+                padding: 10px;
+                width: 70%;
+                margin-right: 10px;
+                background-color: transparent;
+
+                &::placeholder{
+                    color: variables.$light-color;
+                }
+                
+                @include mixins.mobile(){
+                    width: 100%;
+                    margin-bottom: 15px;
+                } 
+            }
+            button{
+                border-radius: 4px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                &:hover{
+                    background-color: #fff;
+                    color: variables.$primary-color;
+                }
+
+                @include mixins.mobile(){
+                    width: 100%;
+                } 
+            }
+        }
+    }
+}
+
+//rodape
+#rodape{
+   background-color: variables.$light-color;
+    .rodape-content{
+        @include mixins.mobile(){
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        } 
+    }
+    
+    figure{
+       margin: 0;
+       width: 200px;
+
+        @include mixins.mobile(){
+            width: 150px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }   
+    }
+    p{
+       font-size: 1.1rem;
+       margin: 0;
+
+        @include mixins.mobile(){
+            font-size: 1rem;
+        } 
+    }
+    a{
+       color: variables.$primary-color-dark;
+       font-weight: 500;
+       letter-spacing: 1px;
+
+        &:hover{
+           color: variables.$primary-color;
+        }
+    }
+}
