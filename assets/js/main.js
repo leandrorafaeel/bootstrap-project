@@ -169,4 +169,11 @@ $('.botoes button').click(function(){
     $('.items').isotope({
         filter: selector
     });
-})
+});
+
+//atualizando o ano do footer
+function copyright(){
+    const ano = document.querySelector(".ano");
+    ano.textContent = new Date().getFullYear();
+}
+copyright();

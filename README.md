@@ -4,7 +4,7 @@
 
 </div>
 
-Projeto desenvolvido com o objetivo de colocar em prática meus conhecimentos em Bootstrap 5. Aqui eu utilizei algumas bibliotecas em Javascript para incrementar a aparência do projeto, como as bibliotecas Isotope JS, Owl Carousel e Progress Bar. Para deixar o projeto responsivo eu utilizei Media Queries.
+Projeto desenvolvido em Bootstrap 5, aqui eu utilizei algumas bibliotecas em Javascript para incrementar a aparência do projeto, como as bibliotecas Isotope JS, Owl Carousel e Progress Bar. Para deixar o projeto responsivo eu utilizei Media Queries.
 
 * Demo: [Clique aqui para ver esse projeto](https://leandrorafaeel.github.io/bootstrap-project/)
 
@@ -23,11 +23,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 * HTML5
 * CSS3
-* JAVASCRIPT (JQUERY)
 * SASS
+* Bootstrap 5
+* JAVASCRIPT
 
-# Dependências:
-Ferramentas de dependências que utilizei nesse projeto:
+## Dependências:
+Ferramentas que utilizei nesse projeto:
 
 * [Bootstrap 5](https://getbootstrap.com/)
 * [SASS](https://sass-lang.com/)
